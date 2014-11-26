@@ -34,9 +34,9 @@ public class FofoquemeToGoActivity extends Activity implements TextToSpeech.OnIn
 	// msg+number file name
 	private static final String MSG_FILE_NAME = "FOFOQUEME";
 	//
-	private static final String[] PREPHRASE  = {"aiaiai aiai. ", "ui ui ui. ", "n‹o acredito. ", "olha essa. ", "ouve s—. ", "escuta essa. ", "meu deus. ", "relou. "};
-	private static final String[] POSTPHRASE = {" . assim voc me mata.", " . relou.", " . verdade.", " . nem me fale.", " . n‹o me diga.", " . puts.", " . n‹o n‹o n‹o.", " . que coisa.", " . pode cr.", " . pois ."};
-	private static final String[] NONPHRASE  = {"s— isso? ", "como assim? ", "aaaaaaiii que preguia. "};
+	private static final String[] PREPHRASE  = {"aiaiai aiai. ", "ui ui ui. ", "nÃ£o acredito. ", "olha essa. ", "ouve sÃ³. ", "escuta essa. ", "meu deus. ", "relou. "};
+	private static final String[] POSTPHRASE = {" . assim vocÃª me mata.", " . relou.", " . verdade.", " . nem me fale.", " . nÃ£o me diga.", " . puts.", " . nÃ£o nÃ£o nÃ£o.", " . que coisa.", " . pode crÃª.", " . pois Ã©."};
+	private static final String[] NONPHRASE  = {"sÃ³ isso? ", "como assim? ", "aaaaaaiii que preguiÃ§a. "};
 
 	private TextToSpeech myTTS = null;
 	private boolean isTTSReady = false;
@@ -74,27 +74,27 @@ public class FofoquemeToGoActivity extends Activity implements TextToSpeech.OnIn
 						//   and clean up brazilian abbreviations
 						message = message.toLowerCase();
 						message = message.replaceAll("[@#]?", "");
-						message = message.replaceAll("À", "");
-						message = message.replaceAll("vc", "vouc");
-						message = message.replaceAll("voce", "vouc");
-						message = message.replaceAll("voc", "vouc");
+						message = message.replaceAll("ï¿½", "ï¿½");
+						message = message.replaceAll("vc", "voucï¿½");
+						message = message.replaceAll("voce", "voucï¿½");
+						message = message.replaceAll("vocï¿½", "voucï¿½");
 						message = message.replaceAll("bj", "beijo");
 						message = message.replaceAll("pqp", "puta que pariu");
 						message = message.replaceAll("pq", "porque");
 						message = message.replaceAll("qq", "qualquer");
-						message = message.replaceAll("abs", "abraos");
-						message = message.replaceAll("–", "n‹o");
-						message = message.replaceAll(" n ", " n‹o ");
-						message = message.replaceAll("nao", "n‹o");
-						message = message.replaceAll("eh", "");
+						message = message.replaceAll("abs", "abraï¿½os");
+						message = message.replaceAll("ï¿½", "nï¿½o");
+						message = message.replaceAll(" n ", " nï¿½o ");
+						message = message.replaceAll("nao", "nï¿½o");
+						message = message.replaceAll("eh", "ï¿½");
 						message = message.replaceAll("rs", "ra ra ");
-						message = message.replaceAll("naum", "n‹o");
-						message = message.replaceAll("tb", "tambm");
-						message = message.replaceAll("tbm", "tambm");
+						message = message.replaceAll("naum", "nï¿½o");
+						message = message.replaceAll("tb", "tambï¿½m");
+						message = message.replaceAll("tbm", "tambï¿½m");
 						message = message.replaceAll("hj", "hoje");
-						message = message.replaceAll("kd", "cad");
+						message = message.replaceAll("kd", "cadï¿½");
 						message = message.replaceAll("msg", "mensagem");
-						message = message.replaceAll(" ta ", " t‡ ");
+						message = message.replaceAll(" ta ", " tï¿½ ");
 						message = message.replaceAll("[():]+", "");
 						
 
